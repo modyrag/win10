@@ -104,79 +104,9 @@ main:hover #i1{
 
 }
 
-.wrapper{
-  display: flex;
-}
-.wrapper .static-txt{
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-    position: relative;
-    top: 22px;
-}
-.wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.dynamic-txts li{
-  list-style: none;
-  color: #FC6D6D;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100%{
-    top: -360px;
-  }
-}
-.dynamic-txts li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 80px;
-}
-.dynamic-txts li span::after{
-  content: "";
-  position: absolute;top: 2px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #FC6D6D;
-  border-left: 2px solid #FC6D6D;
-  animation: typing 3s steps(10) infinite;
-}
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
-}
-#txt{position: fixed;
-    top: 51px;
-    left: 0px;
-
-
-}
   </style>
     </head>
     <body>
-<div id="txt">
- <div class="wrapper">
-    <div class="static-txt">I'm a</div>
-    <ul class="dynamic-txts">
-      <li><span>Abdelrahman Ragab</span></li>
-      <li><span>Mohamed Ragab</span></li>
-      <li><span>Developer</span></li>
-      <li><span>programmer</span></li>
-    </ul>
-  </div>
-<div/>
         <footer>
             <main>
                 <img src="icons8-windows-10-500.svg" id="i1" class="imwin">
